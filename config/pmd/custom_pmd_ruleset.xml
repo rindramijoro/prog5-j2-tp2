@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<ruleset name="Custom PMD Rules"
+         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+
+    <description>
+        Custom ruleset tailored to match specific ESLint functionality.
+    </description>
+
+    <rule ref="category/java/errorprone.xml/UnusedLocalVariable"/>
+    <rule ref="category/java/errorprone.xml/UnusedFormalParameter"/>
+    <rule ref="category/java/errorprone.xml/UnusedPrivateField"/>
+    <rule ref="category/java/errorprone.xml/UnusedPrivateMethod"/>
+
+    <rule ref="category/java/design.xml/AvoidDeeplyNestedIfStmts"/>
+    <rule ref="category/java/performance.xml/AvoidArrayIsTemporaryCopy"/>
+
+</ruleset>
