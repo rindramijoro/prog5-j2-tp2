@@ -20,7 +20,7 @@ public class RentHouse extends AbstractRenting {
 
     @Override
     protected String rentTheRentable() {
-        return renter.getName()+ " rented a house for " +duration+ " months";
+        return renter.getName() + " rented a house for " + duration + " month(s)";
     }
 
     @Override

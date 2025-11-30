@@ -3,7 +3,7 @@ package org.example.service;
 import org.example.entity.Bike;
 import org.example.entity.Renter;
 
-public class RentBike extends AbstractRenting{
+public class RentBike extends AbstractRenting {
     private final Bike bike;
     private final Integer duration;
 
@@ -20,7 +20,7 @@ public class RentBike extends AbstractRenting{
 
     @Override
     protected String rentTheRentable() {
-        return renter+ " rented a bike for " +duration+ " day(s)";
+        return renter + " rented a bike for " + duration + " day(s)";
     }
 
     @Override

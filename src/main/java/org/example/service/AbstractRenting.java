@@ -15,19 +15,19 @@ public abstract class AbstractRenting implements Renting{
 
     @Override
     public String rent() {
-        try{
-            if (preconditions()){
+        try {
+            if (preconditions()) {
                 String result = rentTheRentable();
                 System.out.println(result);
                 logger.log(Level.INFO, "Renting successful: ", result);
-            } else{
+            } else {
                 String failed = failureMessage();
                 System.out.println(failed);
                 logger.log(Level.WARNING, "Failed to rent : ", failed);
             }
-        } catch (Exception e){
+        } catch (Exception e) {
             logger.log(Level.WARNING, "Unexpected error", e);
-            return "An error occured";
+            return "An error occurred";
         }
         return "";
     }

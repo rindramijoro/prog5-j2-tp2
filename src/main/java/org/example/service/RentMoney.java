@@ -2,7 +2,7 @@ package org.example.service;
 
 import org.example.entity.Renter;
 
-public class RentMoney extends AbstractRenting{
+public class RentMoney extends AbstractRenting {
     private final Double amount;
     private final Integer duration;
 
@@ -19,11 +19,11 @@ public class RentMoney extends AbstractRenting{
 
     @Override
     protected String rentTheRentable() {
-        return renter.getName()+ " rented "+amount+ " Ar for "+duration+ " days";
+        return renter.getName() + " rented " + amount + " Ar for " + duration + " days";
     }
 
     @Override
     protected String failureMessage() {
-        return renter.getName()+ " cannot rent money because they don't how ID or bank account";
+        return renter.getName() + " cannot rent money because they don't how ID or bank account";
     }
 }
