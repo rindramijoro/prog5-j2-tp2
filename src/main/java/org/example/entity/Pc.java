@@ -7,8 +7,4 @@ public class Pc extends RentableItem{
         super(model);
         this.type = type;
     }
-
-    public PcType getType() {
-        return type;
-    }
 }

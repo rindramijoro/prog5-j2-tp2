@@ -5,12 +5,14 @@ public class Renter {
     private RenterType type;
     private boolean driverLicense;
     private boolean id;
+    private boolean bankAccount;
 
-    public Renter(String name, RenterType type, boolean driverLicense, boolean id) {
+    public Renter(String name, RenterType type, boolean driverLicense, boolean id, boolean bankAccount) {
         this.name = name;
         this.type = type;
         this.driverLicense = driverLicense;
         this.id = id;
+        this.bankAccount = bankAccount;
     }
 
     public String getName() {
@@ -19,10 +21,6 @@ public class Renter {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public RenterType getType() {
-        return type;
     }
 
     public void setType(RenterType type) {
@@ -43,5 +41,13 @@ public class Renter {
 
     public void setId(boolean id) {
         this.id = id;
+    }
+
+    public boolean hasBankAccount() {
+        return bankAccount;
+    }
+
+    public void setBankAccount(boolean bankAccount) {
+        this.bankAccount = bankAccount;
     }
 }

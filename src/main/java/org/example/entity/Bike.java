@@ -7,8 +7,4 @@ public class Bike extends RentableItem{
         super(model);
         this.type = type;
     }
-
-    public BikeType getType() {
-        return type;
-    }
 }

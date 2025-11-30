@@ -8,8 +8,4 @@ public class House extends RentableItem {
         super(model);
         this.type = type;
     }
-
-    public HouseType getType() {
-        return type;
-    }
 }

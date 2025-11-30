@@ -8,7 +8,4 @@ public class Car extends RentableItem{
         this.carType = carType;
     }
 
-    public CarType getCarType() {
-        return carType;
-    }
 }
