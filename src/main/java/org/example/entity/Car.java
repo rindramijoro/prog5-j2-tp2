@@ -1,8 +1,8 @@
 package org.example.entity;
 
 public class Car {
-    public String carModel;
-    public CarType carType;
+    private String carModel;
+    private CarType carType;
 
     public Car(String carModel, CarType carType) {
         this.carModel = carModel;
