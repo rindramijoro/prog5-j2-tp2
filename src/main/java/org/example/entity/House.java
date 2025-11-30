@@ -1,27 +1,15 @@
 package org.example.entity;
 
-public class House {
-    private String address;
+public class House extends RentableItem {
     private HouseType type;
 
-    public House(String address, HouseType type) {
-        this.address = address;
+
+    public House(String model, HouseType type) {
+        super(model);
         this.type = type;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
     }
 
     public HouseType getType() {
         return type;
-    }
-
-    public void setType(HouseType type) {
-        this.type = type;
     }
 }

@@ -1,5 +1,5 @@
 package org.example.entity;
 
-public enum PcTtype {
+public enum PcType {
     Laptop, Desktop, Workstation
 }

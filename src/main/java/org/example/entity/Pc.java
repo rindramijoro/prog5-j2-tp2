@@ -1,27 +1,14 @@
 package org.example.entity;
 
-public class Pc {
-    private String Model;
-    private PcTtype type;
+public class Pc extends RentableItem{
+    private PcType type;
 
-    public Pc(String model, PcTtype type) {
-        Model = model;
+    public Pc(String model, PcType type) {
+        super(model);
         this.type = type;
     }
 
-    public String getModel() {
-        return Model;
-    }
-
-    public void setModel(String model) {
-        Model = model;
-    }
-
-    public PcTtype getType() {
+    public PcType getType() {
         return type;
-    }
-
-    public void setType(PcTtype type) {
-        this.type = type;
     }
 }
