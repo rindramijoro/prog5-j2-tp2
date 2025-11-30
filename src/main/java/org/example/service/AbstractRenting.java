@@ -5,7 +5,7 @@ import org.example.entity.Renter;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public abstract class AbstractRenting implements Renting{
+public abstract class AbstractRenting implements Renting {
     protected final Renter renter;
     protected final Logger logger = Logger.getLogger(this.getClass().getName());
 
