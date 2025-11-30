@@ -29,7 +29,7 @@ public class Renter {
         this.type = type;
     }
 
-    public boolean isDriverLicense() {
+    public boolean hasDriverLicense() {
         return driverLicense;
     }
 
@@ -37,7 +37,7 @@ public class Renter {
         this.driverLicense = driverLicense;
     }
 
-    public boolean isId() {
+    public boolean hasId() {
         return id;
     }
 
