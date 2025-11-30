@@ -18,9 +18,11 @@ public abstract class AbstractRenting implements Renting{
         try{
             if (preconditions()){
                 String result = rentTheRentable();
+                System.out.println(result);
                 logger.log(Level.INFO, "Renting successful: ", result);
             } else{
                 String failed = failureMessage();
+                System.out.println(failed);
                 logger.log(Level.WARNING, "Failed to rent : ", failed);
             }
         } catch (Exception e){

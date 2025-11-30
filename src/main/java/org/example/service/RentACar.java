@@ -7,8 +7,9 @@ public class RentACar extends AbstractRenting{
     private Car car;
     private int duration;
 
-    public RentACar(Renter renter, int duration) {
+    public RentACar(Renter renter, Car car, int duration) {
         super(renter);
+        this.car = car;
         this.duration = duration;
     }
 
@@ -24,6 +25,6 @@ public class RentACar extends AbstractRenting{
 
     @Override
     protected String failureMessage() {
-        return renter.getName()+ " does not have any driver's license";
+        return renter.getName()+ " does not have a drivers license";
     }
 }

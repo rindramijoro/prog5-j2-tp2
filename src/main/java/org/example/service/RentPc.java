@@ -21,7 +21,7 @@ public class RentPc extends AbstractRenting{
 
     @Override
     protected String rentTheRentable() {
-        return renter.getName()+ " rented a Pc for " +duration+ " days";
+        return renter.getName()+ " rented a Pc for " +duration+ " day(s)";
     }
 
     @Override

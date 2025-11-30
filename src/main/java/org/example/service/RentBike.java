@@ -20,7 +20,7 @@ public class RentBike extends AbstractRenting{
 
     @Override
     protected String rentTheRentable() {
-        return renter+ " rented a bike for " +duration+ " days";
+        return renter+ " rented a bike for " +duration+ " day(s)";
     }
 
     @Override

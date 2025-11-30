@@ -2,13 +2,11 @@ package org.example.service;
 
 import org.example.entity.Renter;
 
-import java.math.BigDecimal;
-
 public class RentMoney extends AbstractRenting{
-    private final BigDecimal amount;
+    private final Double amount;
     private final Integer duration;
 
-    public RentMoney(Renter renter, BigDecimal amount, Integer duration) {
+    public RentMoney(Renter renter, Double amount, Integer duration) {
         super(renter);
         this.amount = amount;
         this.duration = duration;

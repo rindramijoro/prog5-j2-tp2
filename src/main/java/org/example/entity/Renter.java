@@ -19,35 +19,16 @@ public class Renter {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setType(RenterType type) {
-        this.type = type;
-    }
-
     public boolean hasDriverLicense() {
         return driverLicense;
-    }
-
-    public void setDriverLicense(boolean driverLicense) {
-        this.driverLicense = driverLicense;
     }
 
     public boolean hasId() {
         return id;
     }
 
-    public void setId(boolean id) {
-        this.id = id;
-    }
-
     public boolean hasBankAccount() {
         return bankAccount;
     }
 
-    public void setBankAccount(boolean bankAccount) {
-        this.bankAccount = bankAccount;
-    }
 }
